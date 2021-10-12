@@ -12,10 +12,12 @@ static int hourlyIncome = 75; //Manual QA = 40-60$, Automation QA = 50-70$, SDET
 public static void main(String[] args) {
 //Void Method
 // annualIncome(); can not just call method in main method annualIncome();
+	
 Class_1_MethodType_Object myobj = new Class_1_MethodType_Object(); //Create Class Object to call it: Classname myObj = new Classname
 myobj.annualIncomeVoid(); //Calling Void Method ;myObj
 
 //Static Method
+
 weeklyIncomeStatic(); //Calling Static Method // can call directly in the main method
 // dont need to create the object
 // Static method hold the data in the memories of this class
@@ -37,11 +39,12 @@ int calculateWeeklyIncome = hourlyIncome * 40;
 System.out.println("My Weekly Income = " + calculateWeeklyIncome);
 }
 
-//Return Type Method // can be static and nonstatic   do the work but have to return a varible
+//Return Type Method // can be static and non static   do the work but have to return a varible
+
 public int monthlyIncomeReturn(){ // need to add myobj. to print in the main method
-//public static int monthlyIncomeReturn(){ //dont need to add myobj. to print
+//public static int monthlyIncomeReturn(){ //don't need to add myobj. to print
 int calculateMonthlyIncome = hourlyIncome * 180;
-//System.out.println("My Weekly Income = " + calculateMonthlyIncome);// since its return type cant printout here
+//System.out.println("My Weekly Income = " + calculateMonthlyIncome);// since its return type can't printout here
 return calculateMonthlyIncome; // need to call in the main method to printout
 }
 
